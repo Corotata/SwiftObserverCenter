@@ -1,0 +1,17 @@
+
+#source 'https://github.com/CocoaPods/Specs.git'
+#source 'https://cdn.cocoapods.org/'
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+
+
+use_frameworks!
+
+target 'SwiftObserverCenter_Example' do
+  pod 'SwiftObserverCenter', :path => '../'
+
+  target 'SwiftObserverCenter_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

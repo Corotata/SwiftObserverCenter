@@ -1,0 +1,16 @@
+PODS:
+  - SwiftObserverCenter (0.1.0)
+
+DEPENDENCIES:
+  - SwiftObserverCenter (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftObserverCenter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftObserverCenter: 258921257680cd31a37ecfd125fd64ef78498ddc
+
+PODFILE CHECKSUM: 19d709b47df657eae2d6dc42a20da4a35afab2ba
+
+COCOAPODS: 1.10.0

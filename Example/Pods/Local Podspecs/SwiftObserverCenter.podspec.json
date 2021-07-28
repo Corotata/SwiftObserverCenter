@@ -1,0 +1,26 @@
+{
+  "name": "SwiftObserverCenter",
+  "version": "0.1.0",
+  "summary": "SwiftObserverCenter.",
+  "description": "A short description of SwiftObserverCenter.\nTODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Corotata/SwiftObserverCenter",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "corotata": "corotata@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/Corotata/SwiftObserverCenter.git",
+    "tag": "0.1.0"
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "platforms": {
+    "ios": "9.0",
+    "osx": "10.0"
+  },
+  "source_files": "SwiftObserverCenter/Classes/**/*"
+}

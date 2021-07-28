@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19115.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="orL-Gz-Rz3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.5"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Session View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="SessionViewController" customModule="SwiftObserverCenter_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="bvr-GL-zha">
+                                <rect key="frame" x="143" y="387" width="128" height="122"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cb7-lP-adZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="跳转到详情页"/>
+                                        <connections>
+                                            <segue destination="jdE-Ye-INo" kind="show" id="xsQ-TI-pq1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfe-CX-A1N">
+                                        <rect key="frame" x="0.0" y="87.5" width="128" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="发布一条消息"/>
+                                        <connections>
+                                            <action selector="sendNewMessage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H28-69-PVs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bvr-GL-zha" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="3tb-EZ-9Yh"/>
+                            <constraint firstItem="bvr-GL-zha" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="rlu-AZ-4QJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lpY-O1-7Dw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1802.8985507246377" y="-6.0267857142857144"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="hfB-iB-xIB">
+            <objects>
+                <viewController id="IHb-M9-V1i" customClass="ContactViewController" customModule="SwiftObserverCenter_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Efb-q0-eDB"/>
+                        <viewControllerLayoutGuide type="bottom" id="g7Q-ka-Qo7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fnU-6v-OyM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUX-5x-Ywg">
+                                <rect key="frame" x="143" y="431" width="128" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="发布一条消息"/>
+                                <connections>
+                                    <action selector="sendNewMessage:" destination="IHb-M9-V1i" eventType="touchUpInside" id="X9B-k0-Xg5"/>
+                                    <action selector="sendNewMessage:" destination="5rO-hV-yUf" eventType="touchUpInside" id="fVz-Nm-jnl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dUX-5x-Ywg" firstAttribute="centerX" secondItem="fnU-6v-OyM" secondAttribute="centerX" id="BJl-9B-FEL"/>
+                            <constraint firstItem="dUX-5x-Ywg" firstAttribute="centerY" secondItem="fnU-6v-OyM" secondAttribute="centerY" id="dYN-tg-P2C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eu0-gb-rKW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apn-2t-E7R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5rO-hV-yUf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1764" y="706"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="CDd-sG-yNR">
+            <objects>
+                <viewController id="jdE-Ye-INo" customClass="DetailViewController" customModule="SwiftObserverCenter_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Jv-l9-CYW"/>
+                        <viewControllerLayoutGuide type="bottom" id="s9e-G6-G9H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gox-pd-6Fj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6G-M0-bd2">
+                                <rect key="frame" x="143" y="430.5" width="128" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="发布一条消息"/>
+                                <connections>
+                                    <action selector="sendNewMessage:" destination="jdE-Ye-INo" eventType="touchUpInside" id="sqA-GC-UZG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q6G-M0-bd2" firstAttribute="centerY" secondItem="gox-pd-6Fj" secondAttribute="centerY" id="Kjw-8S-X6h"/>
+                            <constraint firstItem="Q6G-M0-bd2" firstAttribute="centerX" secondItem="gox-pd-6Fj" secondAttribute="centerX" id="hJc-0f-Sad"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WJT-GM-IXP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4y1-rc-BFI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2604" y="-6"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xgc-FS-0UN">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="orL-Gz-Rz3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="84A-dK-F99">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ulB-oG-JgM" kind="relationship" relationship="viewControllers" id="2G8-CF-LWM"/>
+                        <segue destination="9BS-nB-IVI" kind="relationship" relationship="viewControllers" id="fyg-9p-jyN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sxt-rW-V6O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-143" y="313"/>
+        </scene>
+        <!--Session-->
+        <scene sceneID="jrU-Vt-iOx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ulB-oG-JgM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Session" id="Pln-aK-Qpn"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NMj-ZN-4s1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="exL-70-eGE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ag-7K-Nut" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="892.75362318840587" y="-6.0267857142857144"/>
+        </scene>
+        <!--Contact-->
+        <scene sceneID="mTa-aY-E1o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9BS-nB-IVI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contact" id="Xl0-Qe-EWb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q2c-Yr-oqO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IHb-M9-V1i" kind="relationship" relationship="rootViewController" id="K3m-pG-Vuh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7i-tw-JpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="893" y="707"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
