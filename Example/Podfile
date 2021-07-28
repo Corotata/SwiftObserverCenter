@@ -3,7 +3,6 @@
 #source 'https://cdn.cocoapods.org/'
 source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 
-
 use_frameworks!
 
 target 'SwiftObserverCenter_Example' do

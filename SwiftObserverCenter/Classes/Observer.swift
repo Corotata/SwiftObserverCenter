@@ -7,8 +7,6 @@
 
 import Foundation
 
-import UIKit
-
 /// WeakReference
 class Weak<T: AnyObject> {
     weak var value: T?

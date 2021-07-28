@@ -29,8 +29,9 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/Corotata/SwiftObserverCenter.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   s.pod_target_xcconfig = {'DEFINES_MODULE' => 'YES' }
-  s.ios.deployment_target = '9.0'
-  s.macos.deployment_target = '10.0'
+  s.ios.deployment_target = "12.0"
+  s.macos.deployment_target = '10.14'
+  s.swift_versions = ['5.0']
   s.source_files = 'SwiftObserverCenter/Classes/**/*'
   
   # s.resource_bundles = {
@@ -38,6 +39,4 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
